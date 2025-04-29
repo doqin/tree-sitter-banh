@@ -1,0 +1,41 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "banh",
+      "camelcase": "Banh",
+      "title": "Bánh",
+      "scope": "source.banh",
+      "file-types": [
+        "bnh"
+      ],
+      "injection-regex": "^banh$",
+      "class-name": "TreeSitterBanh",
+      "highlights": "queries/highlights.scm"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "syntax highlighting for Bánh programming language",
+    "authors": [
+      {
+        "name": "doqin",
+        "email": "personal.azalea@gmail.com",
+        "url": "https://github.com/doqin"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/doqin/tree-sitter-banh.git"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
